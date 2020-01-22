@@ -6,30 +6,24 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-ibrahim/lab01-Node-Ecosystem/pull/1)
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/401-advanced-javascript-ibrahim/lab01-Node-Ecosystem/pull/1)
+* [ci/cd](https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms/actions) (GitHub Actions)
 
 ### Setup
 
-#### `.env` requirements (where applicable)
-
-i.e.
-
-- `PORT` - Port Number
-- `MONGODB_URI` - URL to the running mongo instance/db
-
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
+`node index.js` 
 
 #### Tests
 
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+* How do you run tests?
 
-#### UML
+`npm run test` 
 
-Link to an image of the UML for your application and response to events
+* Any tests of note?
+
+All the tests should pass
+
+* Describe any tests that you did not complete, skipped, etc
+
