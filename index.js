@@ -2,4 +2,4 @@
 
 const validator = require('./lib/validator.js');
 
-validator.isValid();
+console.log(validator.isValid(5, validator.isNum))

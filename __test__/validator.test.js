@@ -12,37 +12,71 @@ describe('validator module performs basic validation of', () => {
     let obj = { x: 'y' };
     let func = () => { };
     let bool = false;
-    const types = [num, arr, obj, func, bool]
+    const types = [str, num, arr, obj, func, bool]
 
     it('strings', () => {
         expect(validator.isString(str)).toBeTruthy();
         types.forEach(element => {
-            expect(validator.isString(element)).toBeFalsy();
+            if (element != str) {
+                expect(validator.isString(element)).toBeFalsy();
+            }
         });
     });
 
     it('numbers', () => {
         expect(validator.isNum(num)).toBeTruthy()
+        types.forEach(element => {
+            if (element != num) {
+                expect(validator.isNum(element)).toBeFalsy();
+            }
+        });
         // expect(true).toBeFalsy();
     });
 
     it('arrays', () => {
         expect(validator.isArr(arr)).toBeTruthy()
+        for (let i = 0; i < types.length; i++) {
+            if (types[i] == arr) {
+                continue;
+            }
+            expect(validator.isArr(types[i])).toBeFalsy();
+        }
+        // types.forEach(element => {
+        //     if (element == arr) {
+        //         continue;
+        //     }
+        //     expect(validator.isArr(element)).toBeFalsy();
+        // });
         // expect(true).toBeFalsy();
     });
 
     it('objects', () => {
         expect(validator.isObj(obj)).toBeTruthy()
+        types.forEach(element => {
+            if (element != obj) {
+                expect(validator.isObj(element)).toBeFalsy();
+            }
+        });
         // expect(true).toBeFalsy();
     });
 
     it('booleans', () => {
         expect(validator.isBoolean(bool)).toBeTruthy()
+        types.forEach(element => {
+            if (element != bool) {
+                expect(validator.isBoolean(element)).toBeFalsy();
+            }
+        });
         // expect(true).toBeFalsy();
     });
 
     it('functions', () => {
         expect(validator.isFunc(func)).toBeTruthy()
+        types.forEach(element => {
+            if (element != func) {
+                expect(validator.isFunc(element)).toBeFalsy();
+            }
+        });
         // expect(true).toBeFalsy();
     });
 
