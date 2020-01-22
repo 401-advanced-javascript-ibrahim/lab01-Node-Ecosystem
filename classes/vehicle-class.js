@@ -1,31 +1,34 @@
-
-'use strict';
+"use strict";
 
 class Vehicle {
-    constructor(name, wheels) {
-        this.name = name
-        this.wheels = wheels
-    }
-    drive() {
-        return 'Moving Forward'
-    }
-    stop() {
-        return 'Stopping'
-    }
+  constructor(name, wheels) {
+    this.name = name;
+    this.wheels = wheels;
+  }
+
+  drive() {
+    return "Moving Forward";
+  }
+
+  stop() {
+    return "Stopping";
+  }
 }
 
 class Car extends Vehicle {
-    constructor(name, wheels) {
-        super(name, 4)
-    }
+  constructor(name, wheels) {
+    super(name, 4);
+  }
 }
 
 class Motorcycle extends Vehicle {
-    constructor(name, wheels) {
-        super(name, 2)
-    }
-    wheelie() {
-        return 'Wheee!'
-    }
+  constructor(name, wheels) {
+    super(name, 2);
+  }
+
+  wheelie() {
+    return "Wheee!";
+  }
 }
-module.exports = { Car, Motorcycle };
+
+module.exports = { Car, Motorcycle }; // module came from Global level (The main Object in node.js)
