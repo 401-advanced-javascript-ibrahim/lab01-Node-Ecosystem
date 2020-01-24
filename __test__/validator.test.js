@@ -41,12 +41,6 @@ describe('validator module performs basic validation of', () => {
             }
             expect(validator.isArr(types[i])).toBeFalsy();
         }
-        // types.forEach(element => {
-        //     if (element == arr) {
-        //         continue;
-        //     }
-        //     expect(validator.isArr(element)).toBeFalsy();
-        // });
         // expect(true).toBeFalsy();
     });
 
