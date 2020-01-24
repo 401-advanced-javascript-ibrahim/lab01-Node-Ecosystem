@@ -2,10 +2,15 @@
 
 
 class Validate {
-    constructor(input) {
+    constructor(input, rules) {
         this.input
+        this.rules
     };
-    
+
+    isValid(input, rules) {
+        return rules(input)
+    }
+
     isTruthy(input) {
         if (input) {
             return true
@@ -19,7 +24,7 @@ class Validate {
                 return true
             }
         }
-        
+
     }
 }
 
@@ -35,4 +40,4 @@ class Person extends Validate {
     }
 }
 
-module.exports = Person;
+module.exports = { Validate, Person };

@@ -4,7 +4,7 @@ const personValidator = require('../lib/validator.js');
 
 const data = require('../data/data.json');
 
-let person = new personValidator(data);
+let person = new personValidator.Person(data);
 
 console.log(person);
 
