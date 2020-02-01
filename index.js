@@ -56,10 +56,10 @@ const harleyClass = new VehicleClass.Motorcycle('Harley');
 // };
 
 console.log('mazdaConstructor', mazdaConstructor.name, mazdaConstructor.drive(), mazdaConstructor.stop());
-console.log('mazdaClass', mazdaClass.name, mazdaClass.drive(), mazdaClass.stop(),'\n');
+console.log('mazdaClass', mazdaClass.name, mazdaClass.drive(), mazdaClass.stop(), '\n');
 
 console.log('harleyConstructor', harleyConstructor.name, harleyConstructor.wheelie(), harleyConstructor.stop());
-console.log('harleyClass', harleyClass.name, harleyClass.wheelie(), harleyClass.stop(),'\n');
+console.log('harleyClass', harleyClass.name, harleyClass.wheelie(), harleyClass.stop(), '\n');
 
 // console.log('Testing susan', validator.isValid(personRules, susan));
 // console.log('Testing fred', validator.isValid(personRules, fred));
